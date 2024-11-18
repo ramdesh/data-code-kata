@@ -5,18 +5,17 @@
 - Beauty of the code (beauty lies in the eyes of the beholder)
 - Testing strategies
 - Basic Engineering principles
+- Understanding of data processing concepts in Python
 
 ## Problem 1
 
-### Parse fixed width file
+### Working with dataframes
 
-- Generate a fixed width file using the provided spec (offset provided in the spec file represent the length of each field).
-- Implement a parser that can parse the fixed width file and generate a delimited file, like CSV for example.
-- DO NOT use python libraries like pandas for parsing. You can use the standard library to write out a csv file (If you feel like)
-- Language choices (Python or Scala)
-- Deliver source via github or bitbucket
-- Bonus points if you deliver a docker container (Dockerfile) that can be used to run the code (too lazy to install stuff that you might use)
-- Pay attention to encoding
+- Parse and load the `person.csv` and `condition.csv` files in to a dataframe of your choice
+- Using a query library that allows you to query dataframes (e.g. [pandasql for pandas](https://pypi.org/project/pandasql/)), write and execute queries for the following:
+  - Write SQL to count the number `person` with the diagnosis `E11.9`
+  - Write SQL to list the states where patients with the diagnosis `E11.9` are present
+  - Select `personId` of `person` with the condition `Chronic kidney disease stage 1`
 
 ## Problem 2
 
@@ -25,12 +24,8 @@
 - Generate a csv file containing first_name, last_name, address, date_of_birth
 - Process the csv file to anonymise the data
 - Columns to anonymise are first_name, last_name and address
-- You might be thinking  that is silly
-- Now make this work on 2GB csv file (should be doable on a laptop)
-- Demonstrate that the same can work on bigger dataset
-- Hint - You would need some distributed computing platform
+- Think about how we can run this on a larger file (>4GB)
 
 ## Choices
 
-- Any language, any platform
-- One of the above problems or both, if you feel like it.
+- One of the above problems or both.
