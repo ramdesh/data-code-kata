@@ -6,6 +6,7 @@
 - Testing strategies
 - Basic Engineering principles
 - Understanding of data processing concepts in Python
+- You will not be evaluated on this, but additional points for Dockerizing your solution.
 
 ## Problem 1
 
