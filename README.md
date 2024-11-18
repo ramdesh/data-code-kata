@@ -25,7 +25,3 @@
 - Process the csv file to anonymise the data
 - Columns to anonymise are first_name, last_name and address
 - Think about how we can run this on a larger file (>4GB)
-
-## Choices
-
-- One of the above problems or both.
